@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <title>Simple Text Editor</title>
+</head>
+
+<body>
+
+    <div class="editor-container">
+
+        <div class="toolbar">
+            <button onclick="execCmd('bold')"><b>B</b></button>
+            <button onclick="execCmd('italic')"><i>I</i></button>
+            <button onclick="execCmd('underline')"><u>U</u></button>
+            <button onclick="execCmd('strikeThrough')"><strike>S</strike></button>
+            <button onclick="execCmd('justifyLeft')">Left</button>
+            <button onclick="execCmd('justifyCenter')">Center</button>
+            <button onclick="execCmd('justifyRight')">Right</button>
+            <button onclick="execCmd('justifyFull')">Justify</button>
+            <button onclick="execCmd('insertUnorderedList')">UL</button>
+            <button onclick="execCmd('insertOrderedList')">OL</button>
+            <button onclick="execCmd('createLink', prompt('Enter the URL', 'https://'))">Link</button>
+            <button onclick="execCmd('unlink')">Unlink</button>
+            <button onclick="execCmd('insertImage', prompt('Enter the image URL:', 'https://'))">Image</button>
+
+        </div>
+        <div class="editor" contenteditable="true">
+            Start editing...
+        </div>
+
+    </div>
+
+
+    <script src="main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,14 @@
+<script>
+
+
+    // script.js
+function execCmd(command, value = null) {
+    document.execCommand(command, false, value);
+}
+
+// Optional: Add function to enable/disable buttons based on the current selection
+document.getElementById('editor').addEventListener('input', function() {
+    // Additional logic can be added here to manage toolbar button states
+});
+
+</script>
